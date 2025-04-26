@@ -1,0 +1,105 @@
+<!-- whatsapp.html -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+.float-whatsapp {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 40px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.float-whatsapp:hover {
+    background-color: #128C7E;
+    color: #FFF;
+    transform: scale(1.1);
+}
+
+.whatsapp-tooltip {
+    position: absolute;
+    right: 75px;
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.float-whatsapp:hover .whatsapp-tooltip {
+    opacity: 1;
+}
+
+@media screen and (max-width: 767px) {
+    .float-whatsapp {
+        width: 60px;
+        height: 60px;
+        right: 20px;
+        bottom: 20px;
+        font-size: 35px;
+    }
+}
+</style>
+
+<a href="https://wa.me/447867474741?text=Hi!%20I'd%20like%20to%20know%20more%20about%20your%20services"
+   class="float-whatsapp"
+   target="_blank"
+   onclick="trackWhatsAppClick()">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">Chat with us on WhatsApp!</span>
+</a>
+
+<script>
+const WHATSAPP_CONFIG = {
+    phoneNumber: '447867474741',
+    defaultMessage: "Hi! I'm interested in learning more about your courses.",
+    businessHours: {
+        start: 9,  // 9 AM
+        end: 18    // 6 PM
+    }
+};
+
+async function trackWhatsAppClick() {
+    try {
+        // Save click to Firebase
+        await db.collection('whatsapp_clicks').add({
+            timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+            businessHours: isBusinessHours()
+        });
+        console.log('WhatsApp click tracked');
+    } catch (error) {
+        console.error('Error tracking WhatsApp click:', error);
+    }
+}
+
+function isBusinessHours() {
+    const now = new Date();
+    const hour = now.getHours();
+    return hour >= WHATSAPP_CONFIG.businessHours.start && hour < WHATSAPP_CONFIG.businessHours.end;
+}
+
+function updateWhatsAppLink() {
+    const whatsappLink = document.querySelector('.float-whatsapp');
+    const message = isBusinessHours() 
+        ? WHATSAPP_CONFIG.defaultMessage 
+        : `${WHATSAPP_CONFIG.defaultMessage} (Note: Our typical response time is within business hours)`;
+    
+    whatsappLink.href = `https://wa.me/${WHATSAPP_CONFIG.phoneNumber}?text=${encodeURIComponent(message)}`;
+}
+
+document.addEventListener('DOMContentLoaded', updateWhatsAppLink);
+</script>
