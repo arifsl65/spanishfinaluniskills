@@ -1,0 +1,36 @@
+/* page-banner.css */
+.banner-section {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/slider-image1.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    margin-top: 70px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.banner-section h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.banner-section p {
+    font-size: 18px;
+    color: #f0f0f0;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .banner-section {
+        padding: 70px 0;
+    }
+    .banner-section h1 {
+        font-size: 32px;
+    }
+    .banner-section p {
+        font-size: 16px;
+    }
+}

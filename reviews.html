@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>UniSkills Spanish - Student Reviews</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="UniSkills Spanish - Read reviews from our students">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/templatemo-style.css">
+    <link rel="stylesheet" href="css/page-banner.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics-compat.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+    <!-- PRE LOADER -->
+    <section class="preloader">
+        <div class="spinner">
+            <span class="spinner-rotate"></span>
+        </div>
+    </section>
+
+    <div id="whatsapp-button"></div>
+
+    <!-- MENU -->
+    <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                </button>
+                
+                <!-- Logo and Brand -->
+                <div class="header-content">
+                    <img src="images/Educational Growth Logo.png" alt="Spanish" class="logo-img" style="max-height: 250px;">
+                    <a href="index.html" class="navbar-brand">Spanish</a>
+                </div>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-nav-first">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="campuses.html">Campuses</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="reviews.html" class="active">Reviews</a></li>
+                    <li><a href="enroll.html">Lets Enroll</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+
+                </ul>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Page Banner -->
+    <section class="banner-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Student Reviews</h1>
+                    <p>See what our students have to say about their learning experiences</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIAL -->
+    <section id="testimonial">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="section-title">
+                        <h2>Student Reviews <small>Around UK</small></h2>
+                    </div>
+            
+                    <div class="owl-carousel owl-theme owl-client">
+                        <div class="col-md-4 col-sm-4">
+                            <div class="item">
+                                <div class="tst-image">
+                                    <img src="images/tst-image1.jpg" class="img-responsive" alt="Jackson, Business Management Student">
+                                </div>
+                                <div class="tst-author">
+                                    <h4>Jackson</h4>
+                                    <span>Business Management Student</span>
+                                </div>
+                                <p>Taking the BA (Hons) Global Business with Foundation Year was a great decision. It gave me the business foundation I needed, and now I'm more confident in tackling complex management tasks. The course was practical and engaging, and I would recommend it to anyone starting a career in business.</p>
+                                <div class="tst-rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="col-md-4 col-sm-4">
+                            <div class="item">
+                                <div class="tst-image">
+                                    <img src="images/tst-image2.jpg" class="img-responsive" alt="Camila, Management Skills Student">
+                                </div>
+                                <div class="tst-author">
+                                    <h4>Camila</h4>
+                                    <span>Management Skills Student</span>
+                                </div>
+                                <p>The Level 3 Diploma in Management Skills (NCFE) was exactly what I needed to take my career to the next level. The course helped me improve my decision-making and leadership abilities. It was hands-on and taught me how to manage teams effectively and deal with real-world business problems.</p>
+                                <div class="tst-rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="col-md-4 col-sm-4">
+                            <div class="item">
+                                <div class="tst-image">
+                                    <img src="images/tst-image3.jpg" class="img-responsive" alt="Barbie, Construction Management Student">
+                                </div>
+                                <div class="tst-author">
+                                    <h4>Barbie</h4>
+                                    <span>Construction Management Student</span>
+                                </div>
+                                <p>The HND in Construction Management gave me the knowledge I needed to move forward in my career. It taught me about construction processes, project management, and how to lead teams. The course content was detailed, and the practical projects helped me gain hands-on experience.</p>
+                                <div class="tst-rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="col-md-4 col-sm-4">
+                            <div class="item">
+                                <div class="tst-image">
+                                    <img src="images/tst-image4.jpg" class="img-responsive" alt="Andrio, Digital Marketing Student">
+                                </div>
+                                <div class="tst-author">
+                                    <h4>Andrio</h4>
+                                    <span>Digital Marketing Student</span>
+                                </div>
+                                <p>The BSc (Hons) Digital Marketing with Foundation Year was a real eye-opener for me. It provided a great mix of theory and practical skills that are crucial for the industry. I learned how to create marketing strategies, optimize websites, and use social media to build brands effectively.</p>
+                                <div class="tst-rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Static Testimonials -->
+    <section id="additional-testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h2>More Student Experiences <small>Written testimonials</small></h2>
+                    </div>
+                </div>
+                
+                <!-- Static Testimonial 1 -->
+                <div class="col-md-6">
+                    <div class="testimonial-box">
+                        <blockquote>
+                            "The Spanish language program at UniSkills has completely transformed my communication skills. The teachers are patient and supportive, and the course content is perfectly structured for beginners."
+                        </blockquote>
+                        <p class="testimonial-author">- Maria T., Spanish Language Student</p>
+                    </div>
+                </div>
+                
+                <!-- Static Testimonial 2 -->
+                <div class="col-md-6">
+                    <div class="testimonial-box">
+                        <blockquote>
+                            "I was hesitant about online learning, but UniSkills made it seamless. The interactive sessions and flexible schedule allowed me to balance my studies with my full-time job."
+                        </blockquote>
+                        <p class="testimonial-author">- James K., Business Administration Student</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="footer-info">
+                        <div class="section-title">
+                            <h2>Headquarter</h2>
+                        </div>
+                        <address>
+                            <p>Kent, London</p>
+                        </address>
+                        <div class="copyright-text"> 
+                            <p>Copyright &copy; 2024 UniSkills Education</p>
+                            <p>Designed and developed by Datapin.co.uk</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="footer-info">
+                        <div class="section-title">
+                            <h2>Contact Info</h2>
+                        </div>
+                        <address>
+                            <p>Phone: 07867474741</p>
+                            <p><a href="mailto:info@uniskills.education">info@uniskills.education</a></p>
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/custom.js"></script>
+
+    <!-- WhatsApp Button Script -->
+    <script>
+        fetch('whatsapp.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('whatsapp-button').innerHTML = html;
+            })
+            .catch(error => {
+                console.error('Error loading WhatsApp button:', error);
+            });
+    </script>
+
+    <!-- Initialize Firebase -->
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyA45N3Omc1Hlctt3gkhJfNCWJAJ6O4h_0I",
+            authDomain: "spanishcourse-29c11.firebaseapp.com", 
+            projectId: "spanishcourse-29c11",
+            storageBucket: "spanishcourse-29c11.firebasestorage.app",
+            messagingSenderId: "248652420112",
+            appId: "1:248652420112:web:73ae0dec0f425c1be22695",
+            measurementId: "G-NHSQ72PBSY"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const analytics = firebase.analytics();
+    </script>
+
+    <!-- Additional CSS for static testimonials -->
+    <style>
+        .testimonial-box {
+            background: #fff;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        
+        .testimonial-box blockquote {
+            border-left: 4px solid #29ca8e;
+            padding-left: 15px;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+        
+        .testimonial-author {
+            text-align: right;
+            font-weight: bold;
+            color: #555;
+        }
+    </style>
+</body>
+</html>

@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>UniSkills Spanish - Contact Us</title>
+    <title>UniSkills Spanish - Enroll Now</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="UniSkills Spanish - Contact our team">
-
+    <meta name="description" content="UniSkills Spanish - Enroll in our courses today">
+    
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-
+    
     <!-- CSS Links -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -19,98 +18,12 @@
     <link rel="stylesheet" href="css/templatemo-style.css">
     <link rel="stylesheet" href="css/page-banner.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+    
     <!-- Firebase SDKs -->
     <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics-compat.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
-    <style>
-        /* Contact form styles */
-        .contact-form-container {
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 30px;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-        }
-
-        .form-header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .form-header img {
-            max-height: 80px;
-            margin-bottom: 20px;
-        }
-
-        .form-header h2 {
-            color: #333;
-            margin-bottom: 10px;
-        }
-
-        .form-header p {
-            color: #666;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .form-group input.form-control,
-        .form-group textarea.form-control {
-            width: 100%;
-            padding: 12px 15px;
-            border: 2px solid #25d366;
-            border-radius: 5px;
-            font-size: 16px;
-            transition: all 0.3s ease;
-        }
-
-        .form-group input.form-control:focus,
-        .form-group textarea.form-control:focus {
-            outline: none;
-            box-shadow: 0 0 8px rgba(37, 211, 102, 0.4);
-            border-color: #25d366;
-        }
-
-        .form-group textarea.form-control {
-            min-height: 120px;
-            resize: vertical;
-        }
-
-        button[type="submit"] {
-            width: 100%;
-            padding: 12px 20px;
-            background-color: #25d366;
-            color: white;
-            border: 2px solid #25d366;
-            border-radius: 5px;
-            font-size: 16px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        button[type="submit"]:hover {
-            background-color: white;
-            color: #25d366;
-        }
-
-        @media (max-width: 768px) {
-            .contact-form-container {
-                margin: 20px;
-                padding: 20px;
-            }
-
-            .form-header img {
-                max-height: 60px;
-            }
-        }
-    </style>
 </head>
 
 <body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
@@ -132,11 +45,10 @@
                     <span class="icon icon-bar"></span>
                     <span class="icon icon-bar"></span>
                 </button>
-
+                
                 <!-- Logo and Brand -->
                 <div class="header-content">
-                    <img src="images/Educational Growth Logo.png" alt="Spanish" class="logo-img"
-                        style="max-height: 250px;">
+                    <img src="images/Educational Growth Logo.png" alt="Spanish" class="logo-img" style="max-height: 250px;">
                     <a href="index.html" class="navbar-brand">Spanish</a>
                 </div>
             </div>
@@ -149,10 +61,10 @@
                     <li><a href="campuses.html">Campuses</a></li>
                     <li><a href="courses.html">Courses</a></li>
                     <li><a href="reviews.html">Reviews</a></li>
-                    <li><a href="enroll.html">Lets Enroll</a></li>
-                    <li><a href="contact.html" class="active">Contact Us</a></li>
-                </ul>
+                    <li><a href="enroll.html" class="active">Lets Enroll</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
 
+                </ul>
 
             </div>
         </div>
@@ -163,48 +75,77 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1>Contact Us</h1>
-                    <p>We'd love to hear from you</p>
+                    <h1>Enroll Today</h1>
+                    <p>Get started on your educational journey</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Form Section -->
-    <section>
-        <div class="container contact-form-container">
-            <div class="form-header">
-                <img src="images/Educational Growth Logo.png" alt="UniSkills">
-                <h2>Contact Us</h2>
-                <p>We'd love to hear from you. Please fill out this form.</p>
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <form id="contact-form" role="form">
+                        <div class="section-title">
+                            <h2>Contact us <small>we love conversations. let us talk!</small></h2>
+                        </div>
+                        <div class="col-md-12 col-sm-12">
+                            <input type="text" class="form-control" placeholder="Enter full name" name="name" required>
+                            <input type="email" class="form-control" placeholder="Enter email address" name="email" required>
+                            <input type="tel" class="form-control" placeholder="Enter mobile number" name="mobile" required>
+                            <textarea class="form-control" rows="6" placeholder="Tell us about your message" name="message" required></textarea>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <input type="submit" class="form-control" value="Send Message">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="contact-image">
+                        <img src="images/contact-image.jpg" class="img-responsive" alt="Smiling Two Girls">
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
 
-            <form id="contact-form">
-                <div class="form-group">
-                    <input type="text" class="form-control" name="name" placeholder="Enter full name"
-                        style="border: 2px solid #25d366; width: 100%; padding: 10px;" required>
+    <!-- Additional Information Section -->
+    <section id="enrollment-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h2>Enrollment Process <small>Simple steps to join our programs</small></h2>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <input type="email" class="form-control" name="email" placeholder="Enter email address"
-                        style="border: 2px solid #25d366; width: 100%; padding: 10px;" required>
+                
+                <div class="col-md-4">
+                    <div class="enrollment-step">
+                        <div class="step-number">1</div>
+                        <h3>Submit Your Details</h3>
+                        <p>Fill out the contact form with your information and course interests.</p>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <input type="tel" class="form-control" name="mobile" placeholder="Enter mobile number"
-                        pattern="^(\+44\s?7\d{3}|\(?07\d{3}\)?)\s?\d{3}\s?\d{3}$"
-                        title="Please enter a valid UK mobile number (e.g., +44 7123 456 789 or 07123 456 789)"
-                        style="border: 2px solid #25d366; width: 100%; padding: 10px;" required>
+                
+                <div class="col-md-4">
+                    <div class="enrollment-step">
+                        <div class="step-number">2</div>
+                        <h3>Consultation Call</h3>
+                        <p>Our advisors will contact you to discuss course options and eligibility.</p>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <textarea class="form-control" rows="6" name="message" placeholder="Tell us about your message"
-                        style="border: 2px solid #25d366; width: 100%; padding: 10px;" required></textarea>
+                
+                <div class="col-md-4">
+                    <div class="enrollment-step">
+                        <div class="step-number">3</div>
+                        <h3>Begin Your Course</h3>
+                        <p>Complete enrollment forms and start your educational journey with us.</p>
+                    </div>
                 </div>
-                <button type="submit"
-                    style="border: 2px solid #25d366; width: 100%; padding: 10px; background-color: #25d366; color: white;">Send
-                    Message</button>
-
-            </form>
-
-
+            </div>
         </div>
     </section>
 
@@ -220,7 +161,7 @@
                         <address>
                             <p>Kent, London</p>
                         </address>
-                        <div class="copyright-text">
+                        <div class="copyright-text"> 
                             <p>Copyright &copy; 2024 UniSkills Education</p>
                             <p>Designed and developed by Datapin.co.uk</p>
                         </div>
@@ -261,17 +202,17 @@
             });
     </script>
 
-    <!-- Contact Form Script -->
+    <!-- Initialize Firebase and EmailJS -->
     <script>
         // Initialize EmailJS
-        (function () {
+        (function() {
             emailjs.init("r-wDYLjA9-9Ogk-_S");
         })();
 
-        // Firebase config
+        // Firebase Configuration
         const firebaseConfig = {
             apiKey: "AIzaSyA45N3Omc1Hlctt3gkhJfNCWJAJ6O4h_0I",
-            authDomain: "spanishcourse-29c11.firebaseapp.com",
+            authDomain: "spanishcourse-29c11.firebaseapp.com", 
             projectId: "spanishcourse-29c11",
             storageBucket: "spanishcourse-29c11.firebasestorage.app",
             messagingSenderId: "248652420112",
@@ -279,19 +220,22 @@
             measurementId: "G-NHSQ72PBSY"
         };
 
+        // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
         const db = firebase.firestore();
         const analytics = firebase.analytics();
 
-        document.getElementById('contact-form').addEventListener('submit', async function (event) {
+        // Contact Form Handler
+        document.getElementById('contact-form').addEventListener('submit', async function(event) {
             event.preventDefault();
-
-            const submitButton = event.target.querySelector('button[type="submit"]');
+            
+            const submitButton = event.target.querySelector('input[type="submit"]');
+            const originalButtonText = submitButton.value;
+            submitButton.value = 'Sending...';
             submitButton.disabled = true;
-            submitButton.textContent = 'Sending...';
 
             try {
-                // Save to Firebase first
+                // First save to Firebase 
                 await db.collection('contacts').add({
                     name: event.target.name.value,
                     email: event.target.email.value,
@@ -301,16 +245,17 @@
                     created_at: firebase.firestore.FieldValue.serverTimestamp(),
                     is_contacted: false
                 });
-
+                
                 console.log("Firebase save successful");
 
                 // Try to send email, but don't let it fail the whole submission
                 let emailSuccess = true;
                 try {
-                    // Send email using EmailJS with new template ID
                     await emailjs.send(
+                        
                         "service_kx8u9uo", 
-                        "template_grmxnzr", 
+                        "template_grmxnzr",
+
                         {
                             from_name: event.target.name.value,
                             to_name: "Admin",
@@ -321,7 +266,7 @@
                         }
                     );
                     console.log("Email sent successfully");
-
+                    
                     // Track successful submission in analytics
                     analytics.logEvent('contact_form_submitted', {
                         success: true
@@ -329,7 +274,7 @@
                 } catch (emailError) {
                     console.error('Email sending error:', emailError);
                     emailSuccess = false;
-
+                    
                     // Track email error in analytics
                     analytics.logEvent('email_sending_error', {
                         error_message: emailError.message
@@ -348,18 +293,56 @@
 
             } catch (error) {
                 console.error('Error:', error);
-                alert('Error occurred. Please try again.');
-
+                alert('Error occurred while saving your information. Please try again or contact us directly.');
+                
                 // Track error in analytics
                 analytics.logEvent('contact_form_error', {
                     error_message: error.message
                 });
             } finally {
+                submitButton.value = originalButtonText;
                 submitButton.disabled = false;
-                submitButton.textContent = 'Send Message';
             }
         });
     </script>
-</body>
 
+    <!-- Additional CSS for enrollment steps -->
+    <style>
+        #enrollment-info {
+            background: #f8f8f8;
+            padding: 60px 0;
+        }
+        
+        .enrollment-step {
+            background: #fff;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            text-align: center;
+            margin-bottom: 30px;
+            min-height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .step-number {
+            background: #29ca8e;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0 auto 20px;
+        }
+        
+        .enrollment-step h3 {
+            margin-bottom: 15px;
+        }
+    </style>
+</body>
 </html>

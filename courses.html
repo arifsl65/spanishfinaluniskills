@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>UniSkills Spanish - Our Courses</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="UniSkills Spanish - Explore our range of courses">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/templatemo-style.css">
+    <link rel="stylesheet" href="css/page-banner.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics-compat.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+    <!-- PRE LOADER -->
+    <section class="preloader">
+        <div class="spinner">
+            <span class="spinner-rotate"></span>
+        </div>
+    </section>
+
+    <div id="whatsapp-button"></div>
+
+    <!-- MENU -->
+    <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                </button>
+                
+                <!-- Logo and Brand -->
+                <div class="header-content">
+                    <img src="images/Educational Growth Logo.png" alt="Spanish" class="logo-img" style="max-height: 250px;">
+                    <a href="index.html" class="navbar-brand">Spanish</a>
+                </div>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-nav-first">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="campuses.html">Campuses</a></li>
+                    <li><a href="courses.html" class="active">Courses</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="enroll.html">Lets Enroll</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="https://wa.me/447865399859?text=Hi!%20I'd%20like%20to%20know%20more%20about%20your%20services" 
+                           target="_blank">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page Banner -->
+    <section class="banner-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Our Courses</h1>
+                    <p>Explore our range of fully funded educational programs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="section-title">
+                        <h2>Popular Courses <small>Upgrade your skills with the newest courses</small></h2>
+                    </div>
+            
+                    <div class="owl-carousel owl-theme owl-courses">
+                        <!-- Course 1 -->
+                        <div class="col-md-4 col-sm-4">
+                            <div class="item">
+                                <div class="courses-thumb">
+                                    <div class="courses-top">
+                                        <div class="courses-image">
+                                            <img src="images/courses-image1.jpg" class="img-responsive" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="courses-detail">
+                                        <h3><a href="#">BSc (Hons) Business Management</a></h3>
+                                        <p>Explore business management concepts and gain industry-ready skills.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Course 2 -->
+                        <div class="col-md-4 col-sm-4">
+                            <div class="item">
+                                <div class="courses-thumb">
+                                    <div class="courses-top">
+                                        <div class="courses-image">
+                                            <img src="images/courses-image2.jpg" class="img-responsive" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="courses-detail">
+                                        <h3><a href="#">BSc (Hons) Accounting & Financial Management</a></h3>
+                                        <p>Develop financial acumen with a focus on real-world applications.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Course 3 -->
+                        <div class="col-md-4 col-sm-4">
+                            <div class="item">
+                                <div class="courses-thumb">
+                                    <div class="courses-top">
+                                        <div class="courses-image">
+                                            <img src="images/courses-image3.jpg" class="img-responsive" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="courses-detail">
+                                        <h3><a href="#">BSc (Hons) Business & Tourism Management</a></h3>
+                                        <p>Gain expertise in managing tourism businesses with a global perspective.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Course 4 -->
+                        <div class="col-md-4 col-sm-4">
+                            <div class="item">
+                                <div class="courses-thumb">
+                                    <div class="courses-top">
+                                        <div class="courses-image">
+                                            <img src="images/courses-image4.jpg" class="img-responsive" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="courses-detail">
+                                        <h3><a href="#">BSc (Hons) Health, Wellbeing and Social Care</a></h3>
+                                        <p>Focus on community and individual care systems for health and wellbeing.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Courses (Static Display) -->
+    <section id="additional-courses">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h2>Additional Programs <small>More options to advance your career</small></h2>
+                    </div>
+                </div>
+
+                <!-- Course 5 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="courses-thumb">
+                        <div class="courses-top">
+                            <div class="courses-image">
+                                <img src="images/courses-image5.jpg" class="img-responsive" alt="">
+                            </div>
+                        </div>
+                        <div class="courses-detail">
+                            <h3><a href="#">BA (Hons) Global Business Management</a></h3>
+                            <p>A comprehensive program focusing on global business practices and international markets.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 6 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="courses-thumb">
+                        <div class="courses-top">
+                            <div class="courses-image">
+                                <img src="images/courses-image1.jpg" class="img-responsive" alt="">
+                            </div>
+                        </div>
+                        <div class="courses-detail">
+                            <h3><a href="#">BSc (Hons) Digital Marketing</a></h3>
+                            <p>Master digital marketing strategies and techniques for the modern business landscape.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 7 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="courses-thumb">
+                        <div class="courses-top">
+                            <div class="courses-image">
+                                <img src="images/courses-image2.jpg" class="img-responsive" alt="">
+                            </div>
+                        </div>
+                        <div class="courses-detail">
+                            <h3><a href="#">HND Construction Management</a></h3>
+                            <p>Develop essential skills for managing construction projects efficiently.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="footer-info">
+                        <div class="section-title">
+                            <h2>Headquarter</h2>
+                        </div>
+                        <address>
+                            <p>Kent, London</p>
+                        </address>
+                        <div class="copyright-text"> 
+                            <p>Copyright &copy; 2024 UniSkills Education</p>
+                            <p>Designed and developed by Datapin.co.uk</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="footer-info">
+                        <div class="section-title">
+                            <h2>Contact Info</h2>
+                        </div>
+                        <address>
+                            <p>Phone: 07867474741</p>
+                            <p><a href="mailto:info@uniskills.education">info@uniskills.education</a></p>
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/custom.js"></script>
+
+    <!-- WhatsApp Button Script -->
+    <script>
+        fetch('whatsapp.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('whatsapp-button').innerHTML = html;
+            })
+            .catch(error => {
+                console.error('Error loading WhatsApp button:', error);
+            });
+    </script>
+
+    <!-- Initialize Firebase -->
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyA45N3Omc1Hlctt3gkhJfNCWJAJ6O4h_0I",
+            authDomain: "spanishcourse-29c11.firebaseapp.com", 
+            projectId: "spanishcourse-29c11",
+            storageBucket: "spanishcourse-29c11.firebasestorage.app",
+            messagingSenderId: "248652420112",
+            appId: "1:248652420112:web:73ae0dec0f425c1be22695",
+            measurementId: "G-NHSQ72PBSY"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const analytics = firebase.analytics();
+    </script>
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>UniSkills Spanish - Our Campuses</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="UniSkills Spanish - Explore our nationwide campuses">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/templatemo-style.css">
+    <link rel="stylesheet" href="css/page-banner.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics-compat.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+    <!-- PRE LOADER -->
+    <section class="preloader">
+        <div class="spinner">
+            <span class="spinner-rotate"></span>
+        </div>
+    </section>
+
+    <div id="whatsapp-button"></div>
+
+    <!-- MENU -->
+    <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                </button>
+                
+                <!-- Logo and Brand -->
+                <div class="header-content">
+                    <img src="images/Educational Growth Logo.png" alt="Spanish" class="logo-img" style="max-height: 250px;">
+                    <a href="index.html" class="navbar-brand">Spanish</a>
+                </div>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-nav-first">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="campuses.html" class="active">Campuses</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="enroll.html">Lets Enroll</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+
+                </ul>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Page Banner -->
+    <section class="banner-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Our Campuses</h1>
+                    <p>Nationwide locations to serve your educational needs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campuses Section -->
+    <section id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="section-title">
+                        <h2>Campus locations<small>Nationwide Campuses</small></h2>
+                    </div>
+                </div>
+
+                <!-- Birmingham -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="team-thumb">
+                        <div class="team-image">
+                            <img src="images/Birmingham.jpeg" class="img-responsive" alt="Birmingham Campus">
+                        </div>
+                        <div class="team-info">
+                            <h3>Birmingham</h3>
+                            <span>The heart of the Midlands</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bradford -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="team-thumb">
+                        <div class="team-image">
+                            <img src="images/Bradford.png" class="img-responsive" alt="Bradford Campus">
+                        </div>
+                        <div class="team-info">
+                            <h3>Bradford</h3>
+                            <span>A vibrant cultural hub</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Derby -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="team-thumb">
+                        <div class="team-image">
+                            <img src="images/Derby.jpeg" class="img-responsive" alt="Derby Campus">
+                        </div>
+                        <div class="team-info">
+                            <h3>Derby</h3>
+                            <span>The city of innovation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Leicester -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="team-thumb">
+                        <div class="team-image">
+                            <img src="images/Leicester.jpeg" class="img-responsive" alt="Leicester Campus">
+                        </div>
+                        <div class="team-info">
+                            <h3>Leicester</h3>
+                            <span>A city rich in history</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- London -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="team-thumb">
+                        <div class="team-image">
+                            <img src="images/London.jpeg" class="img-responsive" alt="London Campus">
+                        </div>
+                        <div class="team-info">
+                            <h3>London</h3>
+                            <span>The capital of opportunities</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Manchester -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="team-thumb">
+                        <div class="team-image">
+                            <img src="images/Manchester.jpeg" class="img-responsive" alt="Manchester Campus">
+                        </div>
+                        <div class="team-info">
+                            <h3>Manchester</h3>
+                            <span>The northern powerhouse</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Newcastle -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="team-thumb">
+                        <div class="team-image">
+                            <img src="images/Newcastle.jpeg" class="img-responsive" alt="Newcastle Campus">
+                        </div>
+                        <div class="team-info">
+                            <h3>Newcastle</h3>
+                            <span>The gem of the northeast</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shenfield -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="team-thumb">
+                        <div class="team-image">
+                            <img src="images/Shenfield.jpeg" class="img-responsive" alt="Shenfield Campus">
+                        </div>
+                        <div class="team-info">
+                            <h3>Shenfield</h3>
+                            <span>A charming suburban retreat</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="footer-info">
+                        <div class="section-title">
+                            <h2>Headquarter</h2>
+                        </div>
+                        <address>
+                            <p>Kent, London</p>
+                        </address>
+                        <div class="copyright-text"> 
+                            <p>Copyright &copy; 2024 UniSkills Education</p>
+                            <p>Designed and developed by Datapin.co.uk</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="footer-info">
+                        <div class="section-title">
+                            <h2>Contact Info</h2>
+                        </div>
+                        <address>
+                            <p>Phone: 07867474741</p>
+                            <p><a href="mailto:info@uniskills.education">info@uniskills.education</a></p>
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/custom.js"></script>
+
+    <!-- WhatsApp Button Script -->
+    <script>
+        fetch('whatsapp.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('whatsapp-button').innerHTML = html;
+            })
+            .catch(error => {
+                console.error('Error loading WhatsApp button:', error);
+            });
+    </script>
+
+    <!-- Initialize Firebase -->
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyA45N3Omc1Hlctt3gkhJfNCWJAJ6O4h_0I",
+            authDomain: "spanishcourse-29c11.firebaseapp.com", 
+            projectId: "spanishcourse-29c11",
+            storageBucket: "spanishcourse-29c11.firebasestorage.app",
+            messagingSenderId: "248652420112",
+            appId: "1:248652420112:web:73ae0dec0f425c1be22695",
+            measurementId: "G-NHSQ72PBSY"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const analytics = firebase.analytics();
+    </script>
+</body>
+</html>

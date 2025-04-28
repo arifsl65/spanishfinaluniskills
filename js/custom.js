@@ -74,15 +74,41 @@
     });
 
 
-    // SMOOTHSCROLL
+    // SMOOTHSCROLL - MODIFIED FOR MULTI-PAGE SITE
     $(function() {
-      $('.custom-navbar a, #home a').on('click', function(event) {
-        var $anchor = $(this);
+      // This will only apply smooth scrolling to anchors within the same page
+      $('a[href^="#"]').on('click', function(event) {
+        // Only proceed if the hash is not empty (not just "#")
+        if(this.hash !== "") {
+          var $anchor = $(this);
+          var hash = this.hash;
+          
           $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top - 49
-          }, 1000);
-            event.preventDefault();
+            scrollTop: $(hash).offset().top - 49
+          }, 1000, function() {
+            // Add hash to URL after scroll (optional)
+            // window.location.hash = hash;
+          });
+          event.preventDefault();
+        }
       });
-    });  
+    });
+
+    // Highlight active navigation based on current page
+    $(function() {
+      // Get current page URL
+      var url = window.location.href;
+      
+      // Remove active class from all links
+      $('.navbar-nav li a').removeClass('active');
+      
+      // Loop through menu items
+      $('.navbar-nav li a').each(function() {
+        // If the current path is like this link, make it active
+        if (this.href === url) {
+          $(this).addClass('active');
+        }
+      });
+    });
 
 })(jQuery);

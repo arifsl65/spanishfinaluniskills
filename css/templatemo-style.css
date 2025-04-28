@@ -1026,3 +1026,74 @@ https://templatemo.com/tm-516-known
       font-size: 24px;
   }
 }
+
+/* Replace the previous home slider CSS with this updated version */
+
+/* Make home slider items more like a banner with better image fitting */
+.home-slider .item {
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-size: contain; /* Changed from 'cover' to 'contain' to show the full image */
+  background-position: center;
+  height: 550px;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Alternative approach if 'contain' doesn't work well: adjust background position */
+.home-slider .item-first,
+.home-slider .item-second,
+.home-slider .item-third {
+  background-position: center 30%; /* Move the focus point slightly higher */
+  background-size: cover; /* This overrides the 'contain' setting above */
+}
+
+/* Add a dark overlay to make text readable when using 'contain' */
+.home-slider .item:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.4); /* Dark overlay for readability */
+  z-index: 1;
+}
+
+/* Ensure caption stays readable */
+.home-slider .caption {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  position: relative;
+  z-index: 2; /* Place above the overlay */
+  height: 100%;
+  color: #fff;
+  cursor: e-resize;
+  padding: 20px;
+  max-width: 500px;
+}
+
+/* Make slider responsive on smaller screens */
+@media (max-width: 768px) {
+  .home-slider .item {
+    height: 450px;
+  }
+  
+  .home-slider .caption {
+    width: 100%;
+    max-width: none;
+    background-color: rgba(20,20,20,0.3); /* Lighter since we have the overlay */
+  }
+}
+
+/* Make text more visible */
+.home-slider h1 {
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+.home-slider h3 {
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
