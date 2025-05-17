@@ -1,9 +1,62 @@
 /* page-banner.css */
+
+/* Logo and Brand Layout */
+.header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.logo-img {
+    max-height: 60px !important;
+    width: auto;
+    margin-right: 15px;
+}
+
+.navbar-brand {
+    height: auto;
+    padding: 5px 0;
+    font-size: 20px;
+    line-height: 1.2;
+    margin: 0;
+    color: #333;
+}
+
+.navbar-header {
+    float: left;
+    width: auto;
+    margin-right: 20px;
+}
+
+
+/* Logo and Brand Layout */
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.logo-img {
+    max-height: 150px !important;
+    margin-bottom: 10px;
+}
+
+.navbar-brand {
+    margin: 0;
+    padding: 5px 0;
+    height: auto;
+    float: none;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
 .banner-section {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/slider-image1.jpg');
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/264ce850-3ffa-4251-8aa0-8745afe70e3f.png');
     background-size: cover;
     background-position: center;
-    padding: 100px 0;
+    padding: 360px 0; /* Changed from 180px to 360px */
     margin-top: 70px;
     text-align: center;
     color: #ffffff;
