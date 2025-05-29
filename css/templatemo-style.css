@@ -258,7 +258,7 @@ https://templatemo.com/tm-516-known
 
   .custom-navbar {
     background: #ffffff;
-    border-top: 5px solid #29ca8e;
+    border-top: 5px solid #FFD700;
     border-bottom: 0;
     -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
@@ -309,12 +309,12 @@ https://templatemo.com/tm-516-known
   }
 
   .custom-navbar .nav li a:hover {
-    background-color: #29ca8e;
+    background-color: #FFD700;
     color: #ffffff;
   }
 
   .custom-navbar .nav li.active > a {
-    background-color: #29ca8e;
+    background-color: #FFD700;
     color: #ffffff;
   }
 
