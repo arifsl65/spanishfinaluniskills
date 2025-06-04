@@ -76,6 +76,41 @@
     margin-bottom: 0;
 }
 
+/* Contact page specific banner */
+.contact-page .banner-section {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/contact us.png') !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+/* Discover page specific banner */
+.discover-page .banner-section {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/disover_banner.png') !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+/* About page specific banner */
+.about-page .banner-section {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/about us bottom.png') !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+/* Services page specific banner */
+.services-page .banner-section {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/services_banner.png') !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    min-height: 60vh !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 100px 0 !important;
+}
+
 @media (max-width: 768px) {
     .banner-section {
         padding: 70px 0;

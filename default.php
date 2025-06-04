@@ -8,8 +8,7 @@
         <meta content="Default page" name="description">
         <meta content="width=device-width, initial-scale=1" name="viewport">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap" rel="stylesheet">
         <style>
             body {
                 margin: 0px;
@@ -26,7 +25,7 @@
                 width: 100%;
                 left: 0px;
                 font-size: 16px;
-                font-family: 'DM Sans', sans-serif;
+                font-family: "Muli", sans-serif;
                 font-weight: 400;
                 letter-spacing: 0px;
                 text-align: center;
@@ -41,7 +40,7 @@
                 text-decoration: underline;
             }
             h1 {
-                font-family: 'DM Sans', sans-serif;
+                font-family: "Muli", sans-serif;
                 font-size: 24px;
                 font-weight: 700;
                 letter-spacing: 0px;
@@ -70,7 +69,7 @@
                 flex-direction: row;
                 align-items: center;
                 justify-content: center;
-                font-family: 'DM Sans', sans-serif;
+                font-family: "Muli", sans-serif;
                 font-style: normal;
                 font-weight: 700;
                 font-size: 14px;
