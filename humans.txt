@@ -1,0 +1,14 @@
+/* TEAM */
+Owner: Spanish with Support
+Contact: info@spanishwithsupport.com
+Twitter: @spanishsupport
+Location: London, UK
+
+/* SITE */
+Last update: 2025/06/08
+Standards: HTML5, CSS3, JavaScript
+Components: Bootstrap, jQuery, Font Awesome
+Software: Visual Studio Code, GitHub
+
+/* THANKS */
+Thanks for visiting our site! We're dedicated to providing the best Spanish learning experience online.

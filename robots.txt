@@ -1,4 +1,42 @@
-User-agent: *
-Allow: /
+# robots.txt for spanishwithsupport.com
+# Last updated: 2025-06-08
 
-Sitemap: https://arifsl65.github.io/spanishfinaluniskills/sitemap.xml
+User-agent: *
+Allow: /$
+Allow: /index.html$
+Allow: /about.html$
+Allow: /services.html$
+Allow: /discover.html$
+Allow: /enroll.html$
+Allow: /contact.html$
+Allow: /reviews.html
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Disallow admin and other sensitive areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /includes/
+Disallow: /*.php$
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /*?*
+Disallow: /*&
+
+# Sitemaps
+Sitemap: https://www.spanishwithsupport.com/sitemap_index.xml
+Sitemap: https://www.spanishwithsupport.com/sitemap.xml
+
+# Crawl-delay: 10  # Uncomment and adjust if needed to prevent server overload
+
+# Host
+Host: https://www.spanishwithsupport.com
+
+# Visit frequency
+Visit-time: 0600-1800
+
+# Preferred version of the site (www or non-www)
+# Uncomment one of the following:
+# Preferred-version: https://www.spanishwithsupport.com
+# Preferred-version: https://spanishwithsupport.com

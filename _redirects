@@ -1,0 +1,10 @@
+# Redirect all HTTP traffic to HTTPS
+http://spanishwithsupport.com/*    https://www.spanishwithsupport.com/:splat    301!
+http://www.spanishwithsupport.com/*    https://www.spanishwithsupport.com/:splat    301!
+https://spanishwithsupport.com/*    https://www.spanishwithsupport.com/:splat    301!
+
+# Redirect old pages to new ones (example)
+# /old-page.html /new-page.html 301
+
+# Handle 404s gracefully
+/*  /404.html 404
