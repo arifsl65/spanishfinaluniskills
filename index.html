@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>UniSkills Spanish - Home</title>
+    <title>Spanish with Support | Home</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -213,8 +213,9 @@
             });
     </script>
 
-    <!-- Initialize Firebase -->
+    <!-- Firebase Configuration -->
     <script>
+        // Firebase configuration - will be used after cookie consent
         const firebaseConfig = {
             apiKey: "AIzaSyA45N3Omc1Hlctt3gkhJfNCWJAJ6O4h_0I",
             authDomain: "spanishcourse-29c11.firebaseapp.com",
@@ -225,9 +226,34 @@
             measurementId: "G-NHSQ72PBSY"
         };
 
-        // Initialize Firebase
-        firebase.initializeApp(firebaseConfig);
-        const analytics = firebase.analytics();
+        // Initialize Firebase only after consent is given
+        function initializeFirebase() {
+            if (typeof firebase !== 'undefined' && !firebase.apps.length) {
+                firebase.initializeApp(firebaseConfig);
+                window.analytics = firebase.analytics();
+                
+                // Log page view if analytics is initialized
+                if (window.analytics) {
+                    window.analytics.logEvent('page_view');
+                }
+            }
+        }
+
+
+        // Listen for cookie consent changes
+        document.addEventListener('cookieConsentChanged', function(e) {
+            if (e.detail.consent === 'accepted') {
+                initializeFirebase();
+            }
+        });
+
+        // Initialize Firebase if consent was already given
+        document.addEventListener('DOMContentLoaded', function() {
+            const cookieValue = document.cookie.split('; ').find(row => row.startsWith('cookie_consent='));
+            if (cookieValue && cookieValue.split('=')[1].toLowerCase() === 'accepted') {
+                initializeFirebase();
+            }
+        });
     </script>
 
     <!-- Secret Admin Button -->
