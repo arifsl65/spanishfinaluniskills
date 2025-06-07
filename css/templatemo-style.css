@@ -346,6 +346,9 @@ https://templatemo.com/tm-516-known
 
   #home {
     padding: 0;
+    overflow: visible;  /* Changed from hidden to visible */
+    width: 100%;
+    position: relative;
   }
 
   #home h1 {
@@ -371,17 +374,20 @@ https://templatemo.com/tm-516-known
     justify-content: center;
     flex-direction: column;
     text-align: left;
-    background-color: rgba(20,20,20,0.2);
+    background-color: rgba(20,20,20,0.4);
     height: 100%;
     color: #fff;
-    cursor: e-resize;
+    padding: 0 40px;
+    box-sizing: border-box;
   }
 
   .home-slider .item {
     background-repeat: no-repeat;
-    background-attachment: local;
     background-size: cover;
-    height: 650px;
+    background-position: center center;
+    min-height: 80vh;  /* Changed from fixed height to viewport height */
+    width: 100%;
+    position: relative;
   }
   
   .caption h3 a { color: #FFF; }
@@ -389,15 +395,20 @@ https://templatemo.com/tm-516-known
 
   .home-slider .item-first {
     background-image: url(../images/slider-image1.jpg);
-	background-position: center;
+    background-position: center center;
+    background-attachment: scroll;
   }
 
   .home-slider .item-second {
     background-image: url(../images/slider-image2.jpg);
+    background-position: center center;
+    background-attachment: scroll;
   }
 
   .home-slider .item-third {
     background-image: url(../images/slider-image3.jpg);
+    background-position: center center;
+    background-attachment: scroll;
   }
 
 
@@ -1112,12 +1123,15 @@ https://templatemo.com/tm-516-known
   max-width: 100%;
   margin: 0 auto;
   position: relative;
+  border: 1px solid #ddd; /* Added border frame */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Added box shadow */
 }
 
 /* Alternative approach if 'contain' doesn't work well: adjust background position */
 .home-slider .item-first,
 .home-slider .item-second,
 .home-slider .item-third {
+  background-attachment: scroll; /* Changed from fixed to scroll */
   background-position: center 30%; /* Move the focus point slightly higher */
   background-size: cover; /* This overrides the 'contain' setting above */
 }

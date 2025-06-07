@@ -78,9 +78,26 @@
 
 /* Contact page specific banner */
 .contact-page .banner-section {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/contact us.png') !important;
-    background-size: cover !important;
-    background-position: center !important;
+    background: #FFD700 url('../images/contact us.png') center/contain no-repeat !important;
+    position: relative;
+    min-height: 300px;
+    height: 50vh;
+    max-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.contact-page .banner-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.3);
+    z-index: 1;
 }
 
 /* Discover page specific banner */
@@ -94,21 +111,32 @@
 .about-page .banner-section {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/about us bottom.png') !important;
     background-size: cover !important;
-    background-position: center !important;
+    background-position: center top !important;  /* Changed to show top of image */
+    background-repeat: no-repeat !important;
+    background-attachment: scroll !important;
+    min-height: 60vh !important;
+    max-height: 80vh;
+    overflow: hidden;
+    display: flex !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+    padding: 150px 0 50px 0 !important;
 }
 
 /* Services page specific banner */
 .services-page .banner-section {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/services_banner.png') !important;
     background-size: cover !important;
-    background-position: center center !important;
+    background-position: center top !important;  /* Changed from center to show top */
     background-repeat: no-repeat !important;
-    background-attachment: fixed !important;
+    background-attachment: scroll !important;  /* Changed from fixed to scroll with page */
     min-height: 60vh !important;
+    max-height: 80vh;
+    overflow: hidden;
     display: flex !important;
-    align-items: center !important;
+    align-items: flex-start !important;  /* Changed from center to flex-start */
     justify-content: center !important;
-    padding: 100px 0 !important;
+    padding: 150px 0 50px 0 !important;  /* Adjusted padding */
 }
 
 @media (max-width: 768px) {
